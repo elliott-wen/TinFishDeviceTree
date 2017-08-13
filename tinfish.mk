@@ -16,7 +16,7 @@ $(call inherit-product, build/target/product/aosp_x86.mk)
 
 
 PRODUCT_COPY_FILES += \
-	device/spamdroid/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
+	device/tinfish/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     device/tinfish/init.rc:root/init.rc \
     device/tinfish/ueventd.tinfish.rc:root/ueventd.tinfish.rc \
     device/tinfish/fstab.tinfish:root/fstab.tinfish \
@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
     libGLES_mesa \
     libmesa_gallium \
     libmesa_glsl \
-    libnb 
+    libnb \
+    gralloc.tinfish \
 
 $(call inherit-product, device/tinfish/nativebridge/nativebridge.mk)
 
