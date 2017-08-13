@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
     libmesa_glsl \
     libnb \
     gralloc.tinfish \
+    tinfishd 
 
 $(call inherit-product, device/tinfish/nativebridge/nativebridge.mk)
 
